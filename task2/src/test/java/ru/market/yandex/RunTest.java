@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "features"
         , glue = {"ru\\market\\yandex\\stepDefinitions"}
-        , plugin = {"pretty"}
+        , plugin = {"pretty", "html:target/cucumber-html-report"}
         , tags = {"@All"}
 )
 public class RunTest {
